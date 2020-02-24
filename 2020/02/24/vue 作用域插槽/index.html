@@ -6,16 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://kinghxc.top">
-  <title>vue 具名插槽 | 开心的晓的博客</title>
+  <title>vue 作用域插槽 | 开心的晓的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1&amp;#x2F;&amp;#x2F; 具名插槽的定义2Vue.component(&amp;#39;div-box&amp;#39;, &amp;#123;3	template: &amp;#96;4		&amp;lt;header&amp;gt;5			&amp;lt;slot name&amp;#x3D;&amp;quot;header&amp;quot;&amp;gt;&amp;lt;&amp;#x2F;slot&amp;gt;6		&amp;lt;&amp;#x2F;header&amp;gt;7		&amp;lt;main&amp;gt;8">
+  <meta name="description" content="1应用场景： 父组件对子组件的内容进行加工处理21. 插槽定义3Vue.component(&amp;#39;div-box&amp;#39;, &amp;#123;4	template: &amp;#96;5		&amp;lt;ul&amp;gt;6			&amp;lt;li v-for&amp;#x3D;&amp;quot;item in list&amp;quot; v-bind:key&amp;#x3D;&amp;quot;item.id&amp;quot;&amp;gt;7">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vue 具名插槽">
-<meta property="og:url" content="http:&#x2F;&#x2F;kinghxc.top&#x2F;2020&#x2F;02&#x2F;23&#x2F;vue%20%E5%85%B7%E5%90%8D%E6%8F%92%E6%A7%BD&#x2F;index.html">
+<meta property="og:title" content="vue 作用域插槽">
+<meta property="og:url" content="http:&#x2F;&#x2F;kinghxc.top&#x2F;2020&#x2F;02&#x2F;24&#x2F;vue%20%E4%BD%9C%E7%94%A8%E5%9F%9F%E6%8F%92%E6%A7%BD&#x2F;index.html">
 <meta property="og:site_name" content="开心的晓的博客">
-<meta property="og:description" content="1&amp;#x2F;&amp;#x2F; 具名插槽的定义2Vue.component(&amp;#39;div-box&amp;#39;, &amp;#123;3	template: &amp;#96;4		&amp;lt;header&amp;gt;5			&amp;lt;slot name&amp;#x3D;&amp;quot;header&amp;quot;&amp;gt;&amp;lt;&amp;#x2F;slot&amp;gt;6		&amp;lt;&amp;#x2F;header&amp;gt;7		&amp;lt;main&amp;gt;8">
+<meta property="og:description" content="1应用场景： 父组件对子组件的内容进行加工处理21. 插槽定义3Vue.component(&amp;#39;div-box&amp;#39;, &amp;#123;4	template: &amp;#96;5		&amp;lt;ul&amp;gt;6			&amp;lt;li v-for&amp;#x3D;&amp;quot;item in list&amp;quot; v-bind:key&amp;#x3D;&amp;quot;item.id&amp;quot;&amp;gt;7">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-02-23T13:22:59.137Z">
+<meta property="og:updated_time" content="2020-02-24T13:08:33.910Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="开心的晓的博客" type="application/atom+xml">
@@ -144,27 +144,27 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-vue 具名插槽" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-vue 作用域插槽" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      vue 具名插槽
+      vue 作用域插槽
     </h1>
   
 
         
-        <a href="/2020/02/23/vue%20%E5%85%B7%E5%90%8D%E6%8F%92%E6%A7%BD/" class="archive-article-date">
-  	<time datetime="2020-02-23T13:22:02.921Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-23</time>
+        <a href="/2020/02/24/vue%20%E4%BD%9C%E7%94%A8%E5%9F%9F%E6%8F%92%E6%A7%BD/" class="archive-article-date">
+  	<time datetime="2020-02-24T13:06:47.914Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-24</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 具名插槽的定义</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">Vue.component(&#39;div-box&#39;, &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">	template: &#96;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">		&lt;header&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">			&lt;slot name&#x3D;&quot;header&quot;&gt;&lt;&#x2F;slot&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">		&lt;&#x2F;header&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">		&lt;main&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">			&lt;slot&gt;&lt;&#x2F;slot&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">		&lt;&#x2F;main&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">		&lt;footer&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">			&lt;slot name&#x3D;&quot;footer&quot;&gt;&lt;&#x2F;slot&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">		&lt;&#x2F;footer&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">	&#96;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 具名插槽的使用</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">&lt;div-box&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">	&lt;p slot&#x3D;&quot;header&quot;&gt;header&lt;&#x2F;p&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">	&lt;p&gt;main&lt;&#x2F;p&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">	&lt;p slot&#x3D;&quot;footer&quot;&gt;footer&lt;&#x2F;p&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">&lt;&#x2F;div-box&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 具名插槽的另一种用法</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">&lt;div-box&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">	&lt;template  slot&#x3D;&quot;header&quot;&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line">		&lt;p&gt;header&lt;&#x2F;p&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line">	&lt;&#x2F;template&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line">	&#x2F;&#x2F; &lt;p&gt;main&lt;&#x2F;p&gt;  &#x2F;&#x2F; 不具名插槽也可以写为如下（推荐）</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">29</span></pre></td><td class="code"><pre><span class="line">	&lt;template slot:default&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">30</span></pre></td><td class="code"><pre><span class="line">		&lt;p&gt;main&lt;&#x2F;p&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">31</span></pre></td><td class="code"><pre><span class="line">	&lt;&#x2F;tempalte&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">32</span></pre></td><td class="code"><pre><span class="line">	&lt;template slot&#x3D;&quot;footer&quot;&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">33</span></pre></td><td class="code"><pre><span class="line">		&lt;p&gt;footer&lt;&#x2F;p&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">34</span></pre></td><td class="code"><pre><span class="line">	&lt;&#x2F;template&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">35</span></pre></td><td class="code"><pre><span class="line">&lt;&#x2F;div-box&gt;</span></pre></td></tr></table></figure>
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">应用场景： 父组件对子组件的内容进行加工处理</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">1. 插槽定义</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">Vue.component(&#39;div-box&#39;, &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">	template: &#96;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">		&lt;ul&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">			&lt;li v-for&#x3D;&quot;item in list&quot; v-bind:key&#x3D;&quot;item.id&quot;&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">                &lt;slot v-bind:info&#x3D;&quot;item&quot;&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">                    &#123;&#123;item.name&#125;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">                &lt;&#x2F;slot&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">			&lt;&#x2F;li&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">		&lt;&#x2F;ul&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">	&#96;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">&#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">2. 插槽内容</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">&lt;div-box&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">	&lt;template slot-scope&#x3D;&quot;slotPrpos&quot;&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">		&lt;strong v-if&#x3D;&quot;slotProps.info.id&#x3D;&#x3D;2&quot;&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">			&#123;&#123;slotProps.info.name&#125;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">		&lt;&#x2F;strong&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">	&lt;&#x2F;template&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">&lt;&#x2F;div-box&gt;</span></pre></td></tr></table></figure>
 
 
       
@@ -224,7 +224,7 @@
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://kinghxc.top/2020/02/23/vue%20%E5%85%B7%E5%90%8D%E6%8F%92%E6%A7%BD/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://kinghxc.top/2020/02/24/vue%20%E4%BD%9C%E7%94%A8%E5%9F%9F%E6%8F%92%E6%A7%BD/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -238,18 +238,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/02/24/vue%20%E4%BD%9C%E7%94%A8%E5%9F%9F%E6%8F%92%E6%A7%BD/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          vue 作用域插槽
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/02/23/vue%20%E7%BB%84%E4%BB%B6%E6%8F%92%E6%A7%BD/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">vue 组件插槽</div>
+    <a href="/2020/02/23/vue%20%E5%85%B7%E5%90%8D%E6%8F%92%E6%A7%BD/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">vue 具名插槽</div>
       <i class="icon-circle-right"></i>
     </a>
   
