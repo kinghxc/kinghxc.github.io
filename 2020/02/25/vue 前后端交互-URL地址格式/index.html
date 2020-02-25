@@ -6,16 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://kinghxc.top">
-  <title>vue 数组和对象数据变为响应式 | 开心的晓的博客</title>
+  <title>vue 前后端交互-URL地址格式 | 开心的晓的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1vm.set(vm.items, indexOfitem, newValue)2vm.$set(vm.items, indexOfitem, newValue)3  参数：   参数1 要处理的数组名称 &amp;#x2F; 对象名称4		  参数2 要处理的数组索引 &amp;#x2F; 对象属性名5		  参数3 要处理的数组的新值  &amp;#x2F; 对象属性  1&amp;lt;ul&amp;gt;2	&amp;lt;li v-f">
+  <meta name="description" content="11. 传统形式的URL2格式： schema:&amp;#x2F;&amp;#x2F;host:port&amp;#x2F;path?query#fragment3	schema: 协议4	host: 域名或ip地址5	port: 端口 http默认端口80 可以省略6	path: 路径 例如 &amp;#x2F;abc&amp;#x2F;a&amp;#x2F;b7	query: 查询参数 例如 uname&amp;#x3D;lisi&amp;amp;age">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vue 数组和对象数据变为响应式">
-<meta property="og:url" content="http:&#x2F;&#x2F;kinghxc.top&#x2F;2020&#x2F;02&#x2F;21&#x2F;vue%20%E6%95%B0%E7%BB%84%E5%92%8C%E5%AF%B9%E8%B1%A1%E6%95%B0%E6%8D%AE%E5%8F%98%E4%B8%BA%E5%93%8D%E5%BA%94%E5%BC%8F&#x2F;index.html">
+<meta property="og:title" content="vue 前后端交互-URL地址格式">
+<meta property="og:url" content="http:&#x2F;&#x2F;kinghxc.top&#x2F;2020&#x2F;02&#x2F;25&#x2F;vue%20%E5%89%8D%E5%90%8E%E7%AB%AF%E4%BA%A4%E4%BA%92-URL%E5%9C%B0%E5%9D%80%E6%A0%BC%E5%BC%8F&#x2F;index.html">
 <meta property="og:site_name" content="开心的晓的博客">
-<meta property="og:description" content="1vm.set(vm.items, indexOfitem, newValue)2vm.$set(vm.items, indexOfitem, newValue)3  参数：   参数1 要处理的数组名称 &amp;#x2F; 对象名称4		  参数2 要处理的数组索引 &amp;#x2F; 对象属性名5		  参数3 要处理的数组的新值  &amp;#x2F; 对象属性  1&amp;lt;ul&amp;gt;2	&amp;lt;li v-f">
+<meta property="og:description" content="11. 传统形式的URL2格式： schema:&amp;#x2F;&amp;#x2F;host:port&amp;#x2F;path?query#fragment3	schema: 协议4	host: 域名或ip地址5	port: 端口 http默认端口80 可以省略6	path: 路径 例如 &amp;#x2F;abc&amp;#x2F;a&amp;#x2F;b7	query: 查询参数 例如 uname&amp;#x3D;lisi&amp;amp;age">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-02-21T12:52:27.047Z">
+<meta property="og:updated_time" content="2020-02-25T12:49:05.076Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="开心的晓的博客" type="application/atom+xml">
@@ -144,29 +144,27 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-vue 数组和对象数据变为响应式" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-vue 前后端交互-URL地址格式" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      vue 数组和对象数据变为响应式
+      vue 前后端交互-URL地址格式
     </h1>
   
 
         
-        <a href="/2020/02/21/vue%20%E6%95%B0%E7%BB%84%E5%92%8C%E5%AF%B9%E8%B1%A1%E6%95%B0%E6%8D%AE%E5%8F%98%E4%B8%BA%E5%93%8D%E5%BA%94%E5%BC%8F/" class="archive-article-date">
-  	<time datetime="2020-02-21T12:53:27.729Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-21</time>
+        <a href="/2020/02/25/vue%20%E5%89%8D%E5%90%8E%E7%AB%AF%E4%BA%A4%E4%BA%92-URL%E5%9C%B0%E5%9D%80%E6%A0%BC%E5%BC%8F/" class="archive-article-date">
+  	<time datetime="2020-02-25T12:48:24.610Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-25</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">vm.set(vm.items, indexOfitem, newValue)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">vm.$set(vm.items, indexOfitem, newValue)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  参数：   参数1 要处理的数组名称 &#x2F; 对象名称</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">		  参数2 要处理的数组索引 &#x2F; 对象属性名</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">		  参数3 要处理的数组的新值  &#x2F; 对象属性</span></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;ul&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">	&lt;li v-for&#x3D;&quot;(item, index) in firute&quot;&gt;&#123;&#123;item&#125;&#125;&lt;&#x2F;li&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&lt;&#x2F;ul&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&lt;ul&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&lt;li v-for&#x3D;&quot;(value, key, index) in obj&quot;&gt;&#123;&#123;value&#125;&#125;&lt;&#x2F;li&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">&lt;&#x2F;ul&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">       var vm &#x3D; new Vue(&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">           el: &#39;#app&#39;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">           data: &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">               firute: [&#39;apple&#39;, &#39;orange&#39;, &#39;banana&#39;],</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">               obj: &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">                   name: &#39;zhanf&#39;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">                   age: &#39;da&#39;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">               &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">           &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">       &#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">       vm.$set(vm.firute, 0, &#39;sf&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">       vm.$set(vm.obj, &#39;age&#39;, 34);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">   &lt;&#x2F;script&gt;</span></pre></td></tr></table></figure>
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">1. 传统形式的URL</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">格式： schema:&#x2F;&#x2F;host:port&#x2F;path?query#fragment</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">	schema: 协议</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">	host: 域名或ip地址</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">	port: 端口 http默认端口80 可以省略</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">	path: 路径 例如 &#x2F;abc&#x2F;a&#x2F;b</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">	query: 查询参数 例如 uname&#x3D;lisi&amp;age&#x3D;12</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">	fragment: 锚点（哈希） 用于定位页面的某个位置</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">2. Restful形式的URL</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">	http请求方式</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">        GET 查询</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">        POST 添加</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">        PUT 修改</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">        DELETE 删除</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">     符合规则的URL地址</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">     http:&#x2F;&#x2F;www.hello.com&#x2F;books   GET</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">     http:&#x2F;&#x2F;www.hello.com&#x2F;books   POST</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">     http:&#x2F;&#x2F;www.hello.com.books&#x2F;123 PUT</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">     http:&#x2F;&#x2F;www.hello.com.books&#x2F;123 DELETE</span></pre></td></tr></table></figure>
 
 
       
@@ -226,7 +224,7 @@
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://kinghxc.top/2020/02/21/vue%20%E6%95%B0%E7%BB%84%E5%92%8C%E5%AF%B9%E8%B1%A1%E6%95%B0%E6%8D%AE%E5%8F%98%E4%B8%BA%E5%93%8D%E5%BA%94%E5%BC%8F/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://kinghxc.top/2020/02/25/vue%20%E5%89%8D%E5%90%8E%E7%AB%AF%E4%BA%A4%E4%BA%92-URL%E5%9C%B0%E5%9D%80%E6%A0%BC%E5%BC%8F/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -240,18 +238,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/02/21/vue%20%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          vue 数组方法
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/02/20/vue%20%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">vue 生命周期</div>
+    <a href="/2020/02/25/vue%20v-slot%20%E4%BB%A3%E6%9B%BF%E5%85%B7%E5%90%8D%E6%8F%92%E6%A7%BD%E5%92%8C%E4%BD%9C%E7%94%A8%E5%9F%9F%E6%8F%92%E6%A7%BD/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">vue v-slot 代替具名插槽和作用域插槽</div>
       <i class="icon-circle-right"></i>
     </a>
   
