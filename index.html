@@ -143,6 +143,331 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-vue 配置自动打包的相关参数" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/03/vue%20%E9%85%8D%E7%BD%AE%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85%E7%9A%84%E7%9B%B8%E5%85%B3%E5%8F%82%E6%95%B0/">vue 配置自动打包的相关参数</a>
+    </h1>
+  
+
+        
+        <a href="/2020/03/03/vue%20%E9%85%8D%E7%BD%AE%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85%E7%9A%84%E7%9B%B8%E5%85%B3%E5%8F%82%E6%95%B0/" class="archive-article-date">
+  	<time datetime="2020-03-03T12:26:57.993Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; package.json 中的配置</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; --open 打包完成后自动打开浏览器页面</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; --host 配置 IP 地址</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; --port 配置端口</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&quot;scripts&quot;: &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">	&quot;dev&quot;: &quot;webpack-dev-server --open --host 127.0.0.1 --port 8888&quot;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/03/vue%20%E9%85%8D%E7%BD%AE%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85%E7%9A%84%E7%9B%B8%E5%85%B3%E5%8F%82%E6%95%B0/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-vue  配置 html-webpack-plugin 生成预览页面" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/03/vue%20%20%E9%85%8D%E7%BD%AE%20html-webpack-plugin%20%E7%94%9F%E6%88%90%E9%A2%84%E8%A7%88%E9%A1%B5%E9%9D%A2/">vue  配置 html-webpack-plugin 生成预览页面</a>
+    </h1>
+  
+
+        
+        <a href="/2020/03/03/vue%20%20%E9%85%8D%E7%BD%AE%20html-webpack-plugin%20%E7%94%9F%E6%88%90%E9%A2%84%E8%A7%88%E9%A1%B5%E9%9D%A2/" class="archive-article-date">
+  	<time datetime="2020-03-03T12:26:24.161Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">1. 运行 npm install html-webpack-plugin -D 命令，安装生成预览页面的插件</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">2. 修改 webpack.config.js 文件的头部区域，添加如下配置信息</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">	&#x2F;&#x2F; 导入生成预览页面插件，得到一个构造函数</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">	const HtmlWebpackPlugin &#x3D; require(&#39;html-webpack-plugin&#39;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">	&#x2F;&#x2F; 创建插件的实例对象</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">	const htmlPlugin &#x3D; new HtmlWebpackPlugin(&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">		template: &#39;.&#x2F;src&#x2F;index.html&#39;, &#x2F;&#x2F; 指定要用到的模板文件</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">		filename: &#39;index.html&#39; &#x2F;&#x2F; 指定生成的文件名称，该文件存在于内存中，在目录中不显示</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">	&#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">3. 修改 webpack.config.js 文件中向外暴露的配置对象，新增如下配置节点</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">	module.exports &#x3D; &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">		plugins: [ htmlPlugin ] &#x2F;&#x2F; plugins 数组是 webpack 打包期间会用到一些插件列表</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">	&#125;</span></pre></td></tr></table></figure>
+
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/03/vue%20%20%E9%85%8D%E7%BD%AE%20html-webpack-plugin%20%E7%94%9F%E6%88%90%E9%A2%84%E8%A7%88%E9%A1%B5%E9%9D%A2/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-vue webpack的自动打包" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/03/vue%20webpack%E7%9A%84%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85/">vue webpack的自动打包</a>
+    </h1>
+  
+
+        
+        <a href="/2020/03/03/vue%20webpack%E7%9A%84%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85/" class="archive-article-date">
+  	<time datetime="2020-03-03T12:24:18.330Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">1.运行 npm install webpack-dev-server -D 命令，安装支持项目自动打包工具</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">2. 修改 package.json -&gt; scripts 中的dev命令如下：</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">	&quot;scripts&quot;: &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">		&quot;dev&quot;: &quot;webpack-dev-server&quot; &#x2F;&#x2F; srcipt 节点下的脚本，可以通过 npm run 执行</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">	&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">3. 将 src -&gt; index.html 中， script脚本的引用路径， 修改为 &quot;&#x2F;bundle.js&quot;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">4. 运行 npm run dev 命令， 重新进行打包</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">5. 在浏览器中访问 http:&#x2F;&#x2F;localhost:8080 地址，查看自动打包效果</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">注意： </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">	webpack-dev-server 会启动一个实时打包的 http 服务器</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">	webpack-dev-server 打包生成是输出文件，默认放到了项目根目录中，而且是虚拟的、看不见的</span></pre></td></tr></table></figure>
+
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/03/vue%20webpack%E7%9A%84%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-vue 配置webpack打包的出入口文件" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/03/vue%20%E9%85%8D%E7%BD%AEwebpack%E6%89%93%E5%8C%85%E7%9A%84%E5%87%BA%E5%85%A5%E5%8F%A3%E6%96%87%E4%BB%B6/">vue 配置webpack打包的出入口文件</a>
+    </h1>
+  
+
+        
+        <a href="/2020/03/03/vue%20%E9%85%8D%E7%BD%AEwebpack%E6%89%93%E5%8C%85%E7%9A%84%E5%87%BA%E5%85%A5%E5%8F%A3%E6%96%87%E4%BB%B6/" class="archive-article-date">
+  	<time datetime="2020-03-03T12:22:12.965Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">webpack 的 4.x版本中默认约定</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">打包是入口文件为 src -&gt; index.js</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">打包的输出文件为 dist -&gt; main.js</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">如果要修改打包的入口与出口，可以在 wenpack.config.js 中新增如下配置信息</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">const path &#x3D; require(&#39;path&#39;); &#x2F;&#x2F; 导入 node.js 中专门操作路径的模块</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">module.exports &#x3D; &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">	entry: path.join(__dirname, &#39;.&#x2F;src&#x2F;index.js&#39;), &#x2F;&#x2F; 打包入口文件的路径</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">	output: &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">		path: path.join(__dirname, &#39;.&#x2F;dist&#39;), &#x2F;&#x2F; 输出文件的存放路径</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">		filename: &#39;bundle.js&#39; &#x2F;&#x2F; 输出文件名称</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">	&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/03/vue%20%E9%85%8D%E7%BD%AEwebpack%E6%89%93%E5%8C%85%E7%9A%84%E5%87%BA%E5%85%A5%E5%8F%A3%E6%96%87%E4%BB%B6/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-vue webpack概述" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/03/vue%20webpack%E6%A6%82%E8%BF%B0/">vue webpack概述</a>
+    </h1>
+  
+
+        
+        <a href="/2020/03/03/vue%20webpack%E6%A6%82%E8%BF%B0/" class="archive-article-date">
+  	<time datetime="2020-03-03T12:12:57.615Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">webpack是一个流行的前端项目构建工具（打包工具），可以解决当前web开发中所面临的困境</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">webpack提供了友好的模块化支持，以及代码压缩混淆、处理js兼容问题、性能优化等强大功能、从而让程序员把工作重心放到具体的功能实现上，提高了开发效率和项目的可维护性</span></pre></td></tr></table></figure>
+
+<p>基本使用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">实现隔行变色案例</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">1. 新建项目空白目录，并运行 npm init -y 命令，初始化包管理配置文件 package.json</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">2. 新建 src 源代码目录</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">3. 新建 src -&gt; index.html 首页</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">4. 初始化首页基本的结构</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">5. 运行 npm install jquery -s 命令 安装jQuery</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">6. 通过模块化的形式，实现列表隔行变色的效果</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 但是这样是不能实现的，需要前端构建</span></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">1. 运行 npm install webpack webpack-cli -D 命令，安装 webpack 相关的包</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">2. 在项目目录中，创建名为 webpack.config.js 的webpack配置文件</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">3. 在 webpack 的配置文件中，初始化如下基本配置</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">	module.exports &#x3D; &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">		mode: &#39;development&#39; &#x2F;&#x2F; mode 用来指定构建模式 development 开发模式 production 生产模式（压缩混淆代码）</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">	&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">4. 在 package.json 配置文件中 scripts 节点下，新增 dev 脚本如下</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">	&quot;scripts&quot;: &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">		&quot;dev&quot;: &quot;webpack&quot; &#x2F;&#x2F; script 节点下的脚本，可以通过 npm run dev 执行</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">	&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">5. 在终端中运行 npm run dev 命令 启动 webpack 进行项目打包</span></pre></td></tr></table></figure>
+
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/03/vue%20webpack%E6%A6%82%E8%BF%B0/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-vue 直接导入并且执行代码" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -465,333 +790,9 @@
 
 
   
-    <article id="post-vue 路由编程式导航" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/01/vue%20%E8%B7%AF%E7%94%B1%E7%BC%96%E7%A8%8B%E5%BC%8F%E5%AF%BC%E8%88%AA/">vue 路由编程式导航</a>
-    </h1>
-  
-
-        
-        <a href="/2020/03/01/vue%20%E8%B7%AF%E7%94%B1%E7%BC%96%E7%A8%8B%E5%BC%8F%E5%AF%BC%E8%88%AA/" class="archive-article-date">
-  	<time datetime="2020-03-01T12:15:32.669Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">1. 声明式导航: 通过点击链接实现导航的方式，叫做声明式导航</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">	例如： 普通网页中的&lt;a&gt;&lt;&#x2F;a&gt;链接 vue 中的 &lt;router-link&gt;&lt;&#x2F;router-link&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">2. 编程式导航: 通过调用javascript形式API实现导航的方式，叫做编程式导航</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">	例如： 普通网页中location.href</span></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">常用的编程式导航</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">this.$router.push(&#39;hash地址&#39;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">this.$router.go(n)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">const User &#x3D; &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">	template: &#96;&lt;div&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">		&lt;button @click&#x3D;&quot;goRegister&quot;&gt;跳转到注册页面&lt;&#x2F;button&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">	&lt;&#x2F;div&gt;&#96;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">	methods: &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">		goRegister: function () &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">			&#x2F;&#x2F; 用编程的方式控制路由跳转</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">			this.$router.push(&#39;&#x2F;register&#39;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">		&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">	&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">编程式导航参数规则</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">router.push() 方法的参数规则</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 字符串 (路径名称)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">router.push(&#39;&#x2F;home&#39;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 对象</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">router.push(&#123;path: &#39;&#x2F;home&#39;&#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 命名的路由（传递参数）</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">router.push(&#123;name: &#39;&#x2F;user&#39;, params: &#123;userId: 123&#125;&#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 带查询参数, 变成 &#x2F;register?uname&#x3D;lishi</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">route.push(&#123;path: &#39;&#x2F;register&#39;, query: &#123;uname: &#39;lishi&#39;&#125;&#125;)</span></pre></td></tr></table></figure>
-
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/01/vue%20%E8%B7%AF%E7%94%B1%E7%BC%96%E7%A8%8B%E5%BC%8F%E5%AF%BC%E8%88%AA/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-vue 命名路由" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/01/vue%20%E5%91%BD%E5%90%8D%E8%B7%AF%E7%94%B1/">vue 命名路由</a>
-    </h1>
-  
-
-        
-        <a href="/2020/03/01/vue%20%E5%91%BD%E5%90%8D%E8%B7%AF%E7%94%B1/" class="archive-article-date">
-  	<time datetime="2020-03-01T12:14:13.036Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 为了更加方便表示路由路径， 可以给路由规则起一个别名 即为 命名路由</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">const router &#x3D; new VueRouter(&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">	routes: [</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">		&#x2F;&#x2F; 如果 props 是一个函数，则这个函数接收 route 对象为自己的形参</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">		&#123;path: &#39;&#x2F;user&#x2F;:id&#39;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">		component: User,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">		name: &#39;user&#39;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">		props: route &#x3D;&gt; (&#123; uname: &#39;zs&#39;, age: 20, id: route.params.id&#125;)&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">	]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">&#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">&lt;router-link :to&#x3D;&quot;&#123;name: &#39;user&#39;, params: &#123;id: 123&#125;&#125;&quot;&gt;User&lt;&#x2F;router-link&gt;</span></pre></td></tr></table></figure>
-
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/01/vue%20%E5%91%BD%E5%90%8D%E8%B7%AF%E7%94%B1/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-vue 动态路由传递参数(3)-props的值为函数类型" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/01/vue%20%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E4%BC%A0%E9%80%92%E5%8F%82%E6%95%B0(3)-props%E7%9A%84%E5%80%BC%E4%B8%BA%E5%87%BD%E6%95%B0%E7%B1%BB%E5%9E%8B/">vue 动态路由传递参数(3)-props的值为函数类型</a>
-    </h1>
-  
-
-        
-        <a href="/2020/03/01/vue%20%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E4%BC%A0%E9%80%92%E5%8F%82%E6%95%B0(3)-props%E7%9A%84%E5%80%BC%E4%B8%BA%E5%87%BD%E6%95%B0%E7%B1%BB%E5%9E%8B/" class="archive-article-date">
-  	<time datetime="2020-03-01T12:11:47.602Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">const router &#x3D; new VueRouter(&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">	routes: [</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">		&#x2F;&#x2F; 如果 props 是一个函数，则这个函数接收 route 对象为自己的形参</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">		&#123;path: &#39;&#x2F;user&#x2F;:id&#39;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">		component: User,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">		props: route &#x3D;&gt; (&#123; uname: &#39;zs&#39;, age: 20, id: route.params.id&#125;)&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">	]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">&#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">const User &#x3D; &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">	props: [&#39;uname&#39;, &#39;age&#39;, &#39;id&#39;],</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">	template: &#39;&lt;div&gt;用户信息: &#123;&#123;uname + &#39;--&#39; + age + &#39;--&#39; + id&#125;&#125;&lt;&#x2F;div&gt;&#39;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
-
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/01/vue%20%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E4%BC%A0%E9%80%92%E5%8F%82%E6%95%B0(3)-props%E7%9A%84%E5%80%BC%E4%B8%BA%E5%87%BD%E6%95%B0%E7%B1%BB%E5%9E%8B/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-vue 动态路由参数传递(2)-props的值为对象类型" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/01/vue%20%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92(2)-props%E7%9A%84%E5%80%BC%E4%B8%BA%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/">vue 动态路由参数传递(2)-props的值为对象类型</a>
-    </h1>
-  
-
-        
-        <a href="/2020/03/01/vue%20%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92(2)-props%E7%9A%84%E5%80%BC%E4%B8%BA%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/" class="archive-article-date">
-  	<time datetime="2020-03-01T12:10:08.144Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">const router &#x3D; new VueRouter(&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">	routes: [</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">		&#x2F;&#x2F; 如果 props 是一个对象， 它会被按原样设置为组件属性</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">		&#123;path: &#39;&#x2F;user&#x2F;:id&#39;, component: User, props: &#123;uname: &#39;lishi&#39;, age: 12&#125;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">	]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">&#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">const User &#x3D; &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">	props: [&#39;uname&#39;, &#39;age&#39;], &#x2F;&#x2F; 但是不能获取path的id</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">	template: &#96;&lt;div&gt;用户信息 &#123;&#123;uname + &#39;---&#39; + age&#125;&#125;&lt;&#x2F;div&gt;&#96;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
-
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/01/vue%20%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92(2)-props%E7%9A%84%E5%80%BC%E4%B8%BA%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-vue 动态路由传递参数 (1)-props的值为布尔类型" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/01/vue%20%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E4%BC%A0%E9%80%92%E5%8F%82%E6%95%B0%20(1)-props%E7%9A%84%E5%80%BC%E4%B8%BA%E5%B8%83%E5%B0%94%E7%B1%BB%E5%9E%8B/">vue 动态路由传递参数 (1)-props的值为布尔类型</a>
-    </h1>
-  
-
-        
-        <a href="/2020/03/01/vue%20%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E4%BC%A0%E9%80%92%E5%8F%82%E6%95%B0%20(1)-props%E7%9A%84%E5%80%BC%E4%B8%BA%E5%B8%83%E5%B0%94%E7%B1%BB%E5%9E%8B/" class="archive-article-date">
-  	<time datetime="2020-03-01T12:07:36.568Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$route.params.id与对应路由形成高度耦合，不够灵活，所以可以使用props将组件和路由解耦</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&lt;!-- 如果有如下3个链接 --&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&lt;router-link to&#x3D;&quot;&#x2F;user&#x2F;1&quot;&gt;User1&lt;router-link&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&lt;router-link to&#x3D;&quot;&#x2F;user&#x2F;2&quot;&gt;User2&lt;router-link&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">&lt;router-link to&#x3D;&quot;&#x2F;user&#x2F;3&quot;&gt;User3&lt;router-link&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">const router &#x3D; new VueRouter(&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">	routes: [</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">		&#x2F;&#x2F; 如果 props 被设置为 true router.params 将会被设置为组件属性</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">		&#123;path: &#39;&#x2F;user:id&#39;, component: User, props: true&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">	]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">&#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">const User &#x3D; &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">	props: [&#39;id&#39;], &#x2F;&#x2F; 使用 props 接收路由参数</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">	template: &#39;&lt;div&gt;用户ID： &#123;&#123;id&#125;&#125;&lt;&#x2F;div&gt;&#39;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
-
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/01/vue%20%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E4%BC%A0%E9%80%92%E5%8F%82%E6%95%B0%20(1)-props%E7%9A%84%E5%80%BC%E4%B8%BA%E5%B8%83%E5%B0%94%E7%B1%BB%E5%9E%8B/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
     </nav>
   
 
