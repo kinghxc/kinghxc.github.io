@@ -6,13 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://kinghxc.top">
-  <title>Archives: 2020/3 | 开心的晓的博客</title>
+  <title>vue element-ui之布局容器Container | 开心的晓的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="开心的晓的博客">
-<meta property="og:url" content="http:&#x2F;&#x2F;kinghxc.top&#x2F;archives&#x2F;2020&#x2F;03&#x2F;page&#x2F;4&#x2F;index.html">
+  <meta name="description" content="Container 布局容器    标签 备注     外层容器，当包含下面四个元素时，全部子元素垂直排列，否则水平排列    顶栏容器    侧边栏容器    主要区容器    底栏容器   1ps:以上组件采用flex布局，试用前确定浏览器兼容性，外层容器只能包含其他四个子元素，其他四个子元素只能被外层容器包容, 每一个 el- 元素都是一个类，可以直接使用定义  各个元素属性和参数    元">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vue element-ui之布局容器Container">
+<meta property="og:url" content="http:&#x2F;&#x2F;kinghxc.top&#x2F;2020&#x2F;03&#x2F;08&#x2F;vue%20element-ui%E4%B9%8B%E5%B8%83%E5%B1%80%E5%AE%B9%E5%99%A8Container&#x2F;index.html">
 <meta property="og:site_name" content="开心的晓的博客">
+<meta property="og:description" content="Container 布局容器    标签 备注     外层容器，当包含下面四个元素时，全部子元素垂直排列，否则水平排列    顶栏容器    侧边栏容器    主要区容器    底栏容器   1ps:以上组件采用flex布局，试用前确定浏览器兼容性，外层容器只能包含其他四个子元素，其他四个子元素只能被外层容器包容, 每一个 el- 元素都是一个类，可以直接使用定义  各个元素属性和参数    元">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2020-03-08T11:35:03.936Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="开心的晓的博客" type="application/atom+xml">
@@ -141,133 +144,204 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-vue element-ui之布局容器Container" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      vue element-ui之布局容器Container
+    </h1>
+  
+
+        
+        <a href="/2020/03/08/vue%20element-ui%E4%B9%8B%E5%B8%83%E5%B1%80%E5%AE%B9%E5%99%A8Container/" class="archive-article-date">
+  	<time datetime="2020-03-08T13:09:40.648Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-08</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Container 布局容器</p>
+<table>
+<thead>
+<tr>
+<th>标签</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><el-container></td>
+<td>外层容器，当包含下面四个元素时，全部子元素垂直排列，否则水平排列</td>
+</tr>
+<tr>
+<td><el-header></td>
+<td>顶栏容器</td>
+</tr>
+<tr>
+<td><el-aside></td>
+<td>侧边栏容器</td>
+</tr>
+<tr>
+<td><el-main></td>
+<td>主要区容器</td>
+</tr>
+<tr>
+<td><el-footer></td>
+<td>底栏容器</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">ps:以上组件采用flex布局，试用前确定浏览器兼容性，外层容器只能包含其他四个子元素，其他四个子元素只能被外层容器包容, 每一个 el- 元素都是一个类，可以直接使用定义</span></pre></td></tr></table></figure>
+
+<p>各个元素属性和参数</p>
+<table>
+<thead>
+<tr>
+<th>元素</th>
+<th>参数说明</th>
+<th>类型</th>
+<th>可选值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><el-container></td>
+<td>direction(子元素排列方向)</td>
+<td>string</td>
+<td>horizontal/vertical</td>
+<td>子元素中有 el-header  或 el-footer 时为vertical 否则为 horizontal</td>
+</tr>
+<tr>
+<td><el-header></td>
+<td>height(顶栏高度)</td>
+<td>string</td>
+<td></td>
+<td>默认 60px</td>
+</tr>
+<tr>
+<td><el-aside></td>
+<td>width(侧边栏宽度)</td>
+<td>string</td>
+<td></td>
+<td>默认值 300px</td>
+</tr>
+<tr>
+<td><el-footer></td>
+<td>低栏高度</td>
+<td>string</td>
+<td></td>
+<td>默认值 60px</td>
+</tr>
+</tbody></table>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/01/vue%20%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E4%BC%A0%E9%80%92%E5%8F%82%E6%95%B0(3)-props%E7%9A%84%E5%80%BC%E4%B8%BA%E5%87%BD%E6%95%B0%E7%B1%BB%E5%9E%8B/" class="archive-article-date">
-  	<time datetime="2020-03-01T12:11:47.602Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/01/vue%20%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E4%BC%A0%E9%80%92%E5%8F%82%E6%95%B0(3)-props%E7%9A%84%E5%80%BC%E4%B8%BA%E5%87%BD%E6%95%B0%E7%B1%BB%E5%9E%8B/">vue 动态路由传递参数(3)-props的值为函数类型</a>
-    </h1>
-  
+      
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" target="_blank" rel="noopener" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://kinghxc.top/2020/03/08/vue%20element-ui%E4%B9%8B%E5%B8%83%E5%B1%80%E5%AE%B9%E5%99%A8Container/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/01/vue%20%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92(2)-props%E7%9A%84%E5%80%BC%E4%B8%BA%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/" class="archive-article-date">
-  	<time datetime="2020-03-01T12:10:08.144Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-01</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/03/08/vue%20element-ui%E4%B9%8B%E8%A1%A8%E5%8D%95Form/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">vue element-ui之表单Form</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/01/vue%20%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92(2)-props%E7%9A%84%E5%80%BC%E4%B8%BA%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/">vue 动态路由参数传递(2)-props的值为对象类型</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/01/vue%20%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E4%BC%A0%E9%80%92%E5%8F%82%E6%95%B0%20(1)-props%E7%9A%84%E5%80%BC%E4%B8%BA%E5%B8%83%E5%B0%94%E7%B1%BB%E5%9E%8B/" class="archive-article-date">
-  	<time datetime="2020-03-01T12:07:36.568Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/01/vue%20%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E4%BC%A0%E9%80%92%E5%8F%82%E6%95%B0%20(1)-props%E7%9A%84%E5%80%BC%E4%B8%BA%E5%B8%83%E5%B0%94%E7%B1%BB%E5%9E%8B/">vue 动态路由传递参数 (1)-props的值为布尔类型</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/01/vue%20%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E5%8C%B9%E9%85%8D/" class="archive-article-date">
-  	<time datetime="2020-03-01T12:04:45.431Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/01/vue%20%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E5%8C%B9%E9%85%8D/">vue 动态路由匹配</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/2020/03/page/3/">&amp;laquo; Prev</a><a class="page-number" href="/archives/2020/03/">1</a><a class="page-number" href="/archives/2020/03/page/2/">2</a><a class="page-number" href="/archives/2020/03/page/3/">3</a><span class="page-number current">4</span>
-    </nav>
   
 
 
@@ -292,8 +366,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
