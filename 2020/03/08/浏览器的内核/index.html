@@ -6,16 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://kinghxc.top">
-  <title>jQuery | 开心的晓的博客</title>
+  <title>浏览器的内核 | 开心的晓的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1. jquery的入口函数1&amp;#x2F;&amp;#x2F; 1.2$(function () &amp;#123;3	代码4&amp;#125;);5&amp;#x2F;&amp;#x2F; 2.6$(document).ready(function () &amp;#123;7	代码8&amp;#125;);910&amp;#x2F;&amp;#x2F; 3. 11	$是jquery的顶级对象  2.DOM对象 和 jQuery对象1dom对象 通过原生js获取">
+  <meta name="description" content="浏览器 内核    IE trident 内核   Firefox gecko 内核   Safari webkit 内核   Opera 以前是 presto 内核，Opera 现已改用 Google Chrome 的 Blink 内核   Chrome Blink(基于 webkit，Google 与 Opera Software 共同开发)">
+<meta name="keywords" content="随笔">
 <meta property="og:type" content="article">
-<meta property="og:title" content="jQuery">
-<meta property="og:url" content="http:&#x2F;&#x2F;kinghxc.top&#x2F;2019&#x2F;12&#x2F;01&#x2F;jQuery&#x2F;index.html">
+<meta property="og:title" content="浏览器的内核">
+<meta property="og:url" content="http:&#x2F;&#x2F;kinghxc.top&#x2F;2020&#x2F;03&#x2F;08&#x2F;%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E5%86%85%E6%A0%B8&#x2F;index.html">
 <meta property="og:site_name" content="开心的晓的博客">
-<meta property="og:description" content="1. jquery的入口函数1&amp;#x2F;&amp;#x2F; 1.2$(function () &amp;#123;3	代码4&amp;#125;);5&amp;#x2F;&amp;#x2F; 2.6$(document).ready(function () &amp;#123;7	代码8&amp;#125;);910&amp;#x2F;&amp;#x2F; 3. 11	$是jquery的顶级对象  2.DOM对象 和 jQuery对象1dom对象 通过原生js获取">
+<meta property="og:description" content="浏览器 内核    IE trident 内核   Firefox gecko 内核   Safari webkit 内核   Opera 以前是 presto 内核，Opera 现已改用 Google Chrome 的 Blink 内核   Chrome Blink(基于 webkit，Google 与 Opera Software 共同开发)">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-05T14:42:04.620Z">
+<meta property="og:updated_time" content="2020-03-09T05:28:23.385Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="开心的晓的博客" type="application/atom+xml">
@@ -150,241 +151,54 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-jQuery" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-浏览器的内核" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      jQuery
+      浏览器的内核
     </h1>
   
 
         
-        <a href="/2019/12/01/jQuery/" class="archive-article-date">
-  	<time datetime="2019-12-01T12:11:46.735Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-01</time>
+        <a href="/2020/03/08/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E5%86%85%E6%A0%B8/" class="archive-article-date">
+  	<time datetime="2020-03-08T04:39:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-08</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="1-jquery的入口函数"><a href="#1-jquery的入口函数" class="headerlink" title="1. jquery的入口函数"></a>1. jquery的入口函数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 1.</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">$(function () &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">	代码</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 2.</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">$(document).ready(function () &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">	代码</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 3. </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">	$是jquery的顶级对象</span></pre></td></tr></table></figure>
-
-<h3 id="2-DOM对象-和-jQuery对象"><a href="#2-DOM对象-和-jQuery对象" class="headerlink" title="2.DOM对象 和 jQuery对象"></a>2.DOM对象 和 jQuery对象</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">dom对象 通过原生js获取的元素</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">jQuery对象 通过jQuery获取的元素</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; DOM对象 转化为 jQuery对象</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">$(&#39;div&#39;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; jQuery对象 转化为 DOM对象</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">$(&#39;video&#39;)[index]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">$(&#39;video&#39;).get(index)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 例如 </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">$(&#39;video&#39;)[0].play();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">$(&#39;video&#39;).get(0).play();</span></pre></td></tr></table></figure>
-
-<h3 id="3-jQuery选择器"><a href="#3-jQuery选择器" class="headerlink" title="3.jQuery选择器"></a>3.jQuery选择器</h3><table>
+        <table>
 <thead>
 <tr>
-<th align="left">选择器名称</th>
-<th>用法</th>
-<th>描述</th>
+<th>浏览器</th>
+<th>内核</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="left">ID选择器</td>
-<td>$(‘#id’)</td>
-<td>获取指定的id元素</td>
+<td>IE</td>
+<td>trident 内核</td>
 </tr>
 <tr>
-<td align="left">全选选择器</td>
-<td>$(‘*’)</td>
-<td>匹配所有元素</td>
+<td>Firefox</td>
+<td>gecko 内核</td>
 </tr>
 <tr>
-<td align="left">类选择器</td>
-<td>$(‘.calss’)</td>
-<td>获取同一类class的元素</td>
+<td>Safari</td>
+<td>webkit 内核</td>
 </tr>
 <tr>
-<td align="left">标签选择器</td>
-<td>$(‘div’)</td>
-<td>获取同一类标签的元素</td>
+<td>Opera</td>
+<td>以前是 presto 内核，Opera 现已改用 Google Chrome 的 Blink 内核</td>
 </tr>
 <tr>
-<td align="left">并集选择器</td>
-<td>$(‘div,p,li’)</td>
-<td>获取多个元素</td>
-</tr>
-<tr>
-<td align="left">交集选择器</td>
-<td>$(‘li.current’)</td>
-<td>交集元素</td>
-</tr>
-<tr>
-<td align="left">子代选择器</td>
-<td>$(‘ul &gt; li’)</td>
-<td>使用&gt;号 获取亲儿子元素</td>
-</tr>
-<tr>
-<td align="left">后代选择器</td>
-<td>$(‘ul li’)</td>
-<td>使用空格 获取后代元素</td>
+<td>Chrome</td>
+<td>Blink(基于 webkit，Google 与 Opera Software 共同开发)</td>
 </tr>
 </tbody></table>
-<h3 id="4-隐式迭代"><a href="#4-隐式迭代" class="headerlink" title="4.隐式迭代"></a>4.隐式迭代</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">匹配到的元素进行了循环遍历</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">$(&#39;div&#39;).css(&#39;backgroundColor&#39;, &#39;red&#39;) &#x2F;&#x2F;给所有的div背景颜色变为red 隐式迭代</span></pre></td></tr></table></figure>
-
-<h3 id="5-jQuery-筛选选择器"><a href="#5-jQuery-筛选选择器" class="headerlink" title="5.jQuery 筛选选择器"></a>5.jQuery 筛选选择器</h3><table>
-<thead>
-<tr>
-<th>语法</th>
-<th>用法</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>：first</td>
-<td>$(‘ul li:first’)</td>
-<td>获取第一个li元素</td>
-</tr>
-<tr>
-<td>：last</td>
-<td>$(‘ul li:last’)</td>
-<td>获取最后一个li元素</td>
-</tr>
-<tr>
-<td>：eq(index)</td>
-<td>$(‘ul li:eq(2)’)</td>
-<td>获取索引号为2 的li 元素</td>
-</tr>
-<tr>
-<td>：odd</td>
-<td>$(‘ul li:odd’)</td>
-<td>获取索引号为奇数的li元素</td>
-</tr>
-<tr>
-<td>:even</td>
-<td>$(‘ul li:even’)</td>
-<td>获取索引号为偶数的li元素</td>
-</tr>
-</tbody></table>
-<h3 id="6-jQuery筛选方法"><a href="#6-jQuery筛选方法" class="headerlink" title="6.jQuery筛选方法"></a>6.jQuery筛选方法</h3><table>
-<thead>
-<tr>
-<th>语法</th>
-<th>用法</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>parents(‘选择器’)</td>
-<td>$(‘.fore’).parents(‘.one’);</td>
-<td>查找指定的祖先元素</td>
-</tr>
-<tr>
-<td>parent()</td>
-<td>$(‘li’).parent();</td>
-<td>查找父级</td>
-</tr>
-<tr>
-<td>children(selector)</td>
-<td>$(‘ul’).children(‘li’)</td>
-<td>相当于$(‘ul&gt;li’) 最近一级（亲儿子）</td>
-</tr>
-<tr>
-<td>find(select)</td>
-<td>$(‘ul’).find(‘li’)</td>
-<td>相当于$(‘ul li’) 后代选择器</td>
-</tr>
-<tr>
-<td>siblings(selector)</td>
-<td>$(‘.first’).siblings(‘li’)</td>
-<td>查找兄弟节点 不包括自己本身</td>
-</tr>
-<tr>
-<td>nextAll()</td>
-<td>$(‘.first’).nextAll()</td>
-<td>查找当前元素之后的所有兄弟元素</td>
-</tr>
-<tr>
-<td>prevtAll()</td>
-<td>$(‘.first’).prevtAll()</td>
-<td>查找当前元素之前的所有的兄弟元素</td>
-</tr>
-<tr>
-<td>hasClass(class)</td>
-<td>$(‘div’).hasClass(‘protected’)</td>
-<td>检擦当前元素是否含有某个特定的类 有返回true</td>
-</tr>
-<tr>
-<td>eq(index)</td>
-<td>$(‘li’).eq(2)</td>
-<td>相当于$(‘li:eq(2)’) index从0开始</td>
-</tr>
-</tbody></table>
-<h3 id="7-操作css方法"><a href="#7-操作css方法" class="headerlink" title="7.操作css方法"></a>7.操作css方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">1. 参数只写属性名 则返回属性值</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">$(this).css(&#39;color&#39;); </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">2. 设置一组样式</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">$(this).css(&#39;color&#39;, &#39;red&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">3. 设置多组样式 采用对象的形式</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">$(this).css(&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">	&#39;color&#39;: &#39;red&#39;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">	 &#39;fontSize&#39;: &#39;16px&#39;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">&#125;); &#x2F;&#x2F; 不同属性用逗号隔开</span></pre></td></tr></table></figure>
-
-<h3 id="8-类操作（添加-删除-切换）"><a href="#8-类操作（添加-删除-切换）" class="headerlink" title="8.类操作（添加 删除 切换）"></a>8.类操作（添加 删除 切换）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 1. 添加类</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">$(&#39;div&#39;).addClass(&#39;current&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 2.删除类</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">$(&#39;div&#39;).removeClass(&#39;current&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 3.切换类</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">$(&#39;div&#39;).toggleClass(&#39;current&#39;); &#x2F;&#x2F; 有删除 没有添加</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 不影响以前的类名</span></pre></td></tr></table></figure>
-
-<h3 id="9-显示-隐藏-切换效果"><a href="#9-显示-隐藏-切换效果" class="headerlink" title="9.显示 隐藏 切换效果"></a>9.显示 隐藏 切换效果</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 隐藏 </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">hide([speed], [easing],[fn]); &#x2F;&#x2F; 三个参数可以省略</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 参数</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">1. speed 三种预定速度的字符串（&#39;slow&#39; &#39;normal&#39; &#39;fast&#39;）或则表示动画时常的毫秒数（如 1000）</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">2. easing 用来指定切换动画 默认是’swing&#39;(慢快慢) &#39;linear&#39;(匀速)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">3. fn 回调函数 在动画完成后 每一个元素执行一次</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 显示</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">hide();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 切换</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">toggle(); &#x2F;&#x2F; 显示就隐藏 隐藏就显示</span></pre></td></tr></table></figure>
-
-<h3 id="10-滑动（上滑动-下滑动-切换滑动）"><a href="#10-滑动（上滑动-下滑动-切换滑动）" class="headerlink" title="10.滑动（上滑动 下滑动 切换滑动）"></a>10.滑动（上滑动 下滑动 切换滑动）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 1.向下滑动</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">slideDown()</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 2. 向上滑动</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">slideUp()</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 3. 切换滑动</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">slideToggle()</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 参数同显示隐藏</span></pre></td></tr></table></figure>
-
-<h3 id="11-事件切换-hover"><a href="#11-事件切换-hover" class="headerlink" title="11.事件切换 hover()"></a>11.事件切换 hover()</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 参数</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">两个参数</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">$(&#39;div&#39;).hover(function() &#123;&#125;,function() &#123;&#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 第一个函数鼠标进入触发</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 第二个参数鼠标离开触发</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 一个参数</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">$(&#39;div&#39;).hover(function() &#123;&#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 鼠标进入和离开触发同一个函数</span></pre></td></tr></table></figure>
-
-<h3 id="12-停止动画-stop"><a href="#12-停止动画-stop" class="headerlink" title="12.停止动画 stop()"></a>12.停止动画 stop()</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">多次触发动画会使动画排队</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 停止动画</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">stop()</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">stop()写到动画或则效果的前面，相当于停止结束上一次动画</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">$(&#39;div&#39;).hover(function () &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">	$(this).stop().slideToggle();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
-
-<h3 id="13-淡入-淡出效果"><a href="#13-淡入-淡出效果" class="headerlink" title="13. 淡入 淡出效果"></a>13. 淡入 淡出效果</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 1. 淡入 </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">fadeIn();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 2.淡出</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">fadeOut();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 3. 淡入 淡出切换</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">fadeToggle();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 以上参数通 显示隐藏</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 4. 设置透明度</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">fadeTo([speed], opacity, [easing], [fn]);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">opacity 透明度必写</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">其他参数同上</span></pre></td></tr></table></figure>
-
-<h3 id="14-自定义动画-animate"><a href="#14-自定义动画-animate" class="headerlink" title="14 .自定义动画 animate"></a>14 .自定义动画 animate</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">animate(params, [speed], [easing], [fn]);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 参数</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">1. params 想要更该的样式属性，以对象形式传递，必须写 属性名可以不带引号 其余参数可以省略 同上</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">$(&#39;div&#39;).animate(&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">	left: 200,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">	top: 200,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">	opacity: .5</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">&#125;, 30)</span></pre></td></tr></table></figure>
-
-<h3 id="15-获取-设置元素属性"><a href="#15-获取-设置元素属性" class="headerlink" title="15.获取 设置元素属性"></a>15.获取 设置元素属性</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">1. 设置获取元素固有属性</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 获取属性值</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">$(&#39;a&#39;).prop(&#39;href&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 设置属性值</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">$(&#39;a&#39;).prop(&#39;href&#39;, &#39;http:&#x2F;&#x2F;www.baidu.com&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">2. 设置获取元素自定义属性</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 设置自定义属性</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">$(&#39;div&#39;).attr(&#39;index&#39;, 1);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 获取自定义属性值</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">$(&#39;div&#39;).attr(&#39;index&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 3. 数据缓存 data() 这个里面的数据是存放在元素内存中</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;把键 和值存到 span里面</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">$(&#39;span&#39;).data(&#39;uname&#39;, &#39;andy&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 获取值</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">$(&#39;span&#39;).data(&#39;uname&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 另外还可以获取h5 以 data-开头的自定义属性</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">$(&#39;div&#39;).data(&#39;index&#39;); &#x2F;&#x2F; 获取 data-index的值 不用写 data-</span></pre></td></tr></table></figure>
-
-<h3 id="16-获取-设置元素的内容"><a href="#16-获取-设置元素的内容" class="headerlink" title="16. 获取 设置元素的内容"></a>16. 获取 设置元素的内容</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">获取值</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">$(&#39;div&#39;).html(); &#x2F;&#x2F; 相当于innerHTML</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">$(&#39;div&#39;).text(); &#x2F;&#x2F; 相当于innerText</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">设置值</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">$(&#39;div&#39;).html(&#39;123&#39;); &#x2F;&#x2F; 相当于innerHTML</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">$(&#39;div&#39;).text(&#39;123&#39;); &#x2F;&#x2F; 相当于innerText</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">表单获取设置值</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">$(&#39;input&#39;).val() &#x2F;&#x2F; 获取值 相当于 value</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">$(&#39;input&#39;).val(&#39;123&#39;); &#x2F;&#x2F; 设置值</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 方法保留几位小数</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">toFixed(2); &#x2F;&#x2F; 保留2为小数</span></pre></td></tr></table></figure>
-
-<h3 id="17-元素操作"><a href="#17-元素操作" class="headerlink" title="17. 元素操作"></a>17. 元素操作</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">1. 遍历元素 each</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">var arr &#x3D; [&#39;blue&#39;, &#39;red&#39;, &#39;green&#39;];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">$(&#39;div&#39;).each(function (index, domEle) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; index 遍历元素对应的索引号 从0开始</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; domELme 索引号对应的每一个元素 是 DOM元素 要包装成 jQuery元素</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">	$(domEle).css(&#39;color&#39;, arr[index]);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">2.遍历任何对象  $.each()</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">$.each(obj, function (index. domEle) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">&#125;)</span></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">创建标签</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">var li &#x3D; $(&#39;&lt;li&gt;创建元素&lt;&#x2F;li&gt;&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">添加元素</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"> 	1. 内部添加成为父子关系</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"> 	$(&#39;ul&#39;).append(li); &#x2F;&#x2F; 添加到后面</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"> 	$(&#39;ul&#39;).prepend(li); &#x2F;&#x2F; 添加到前面</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"> 	2. 外部添加成为兄弟关系</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"> 	$(&#39;div&#39;).after(div); &#x2F;&#x2F; 添加到当前元素后面</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"> 	$(&#39;div&#39;).before(div); &#x2F;&#x2F; 添加到当前元素前面</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">删除元素</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">	1. 删除匹配元素 包含自己</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">	element.remove();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">	2. 删除所有子元素 不包含自己</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">	$(&#39;ul&#39;).empty();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">	$(&#39;ul&#39;).html(&#39;&#39;);&#x2F;&#x2F; 空字符串</span></pre></td></tr></table></figure>
-
-<h3 id="18-事件绑定"><a href="#18-事件绑定" class="headerlink" title="18. 事件绑定"></a>18. 事件绑定</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">1. 绑定单个事件</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">$(&#39;div&#39;).click(function() &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">	$(this).css(&#39;backgroundColor&#39;, &#39;red&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#125; );</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">2. 采用on 绑定多个事件 采用对象的形式</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">$(&#39;div&#39;).on(&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">	mouseover: function () &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">		$(this).css(&#39;backgroundColor&#39;, &#39;red&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">	&#125;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">	mouseout: function () &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">		$(this).css(&#39;backgroundColor&#39;, &#39;blue&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">	&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">&#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 如果是同一个事件 可以简写</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">$(&#39;div&#39;).on(&quot;mouseover mouseout&quot;, function () &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">	$(this).toggleClass(&#39;red&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">&#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">(2). 采用 on 可以实现事件委托</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">$(&#39;ul&#39;).on(&#39;click&#39;, &#39;li&#39;, function () &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">	alert(&#39;11&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">&#125;) &#x2F;&#x2F; 为ul绑定点击事件 点击li 触发事件</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">（3）. on 可以实现给未来创建的元素绑定事件</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line">$(&#39;ol&#39;).on(&#39;click&#39;, &#39;li&#39;, function () &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line">	alert(&#39;123&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line">&#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">29</span></pre></td><td class="code"><pre><span class="line">var li &#x3D; $(&#39;&lt;li&gt;我是刚创建的&lt;&#x2F;li&gt;&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">30</span></pre></td><td class="code"><pre><span class="line">$(&#39;ol&#39;).append(li); &#x2F;&#x2F; 刚刚创建的li 也绑定了click事件</span></pre></td></tr></table></figure>
-
-<h3 id="19-解绑事件"><a href="#19-解绑事件" class="headerlink" title="19. 解绑事件"></a>19. 解绑事件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">通过 off 解绑事件</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">1. $(&#39;div&#39;).off(); &#x2F;&#x2F; 解绑div所有事件</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">2. $(&#39;div&#39;).off(&#39;click&#39;); &#x2F;&#x2F; 解绑div点击事件</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 解绑委托事件</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">$(&#39;ul&#39;).off(&#39;click&#39;, &#39;li&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 通过 one() 绑定事件和on一样但是只能触发一次</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">$(&#39;div&#39;).one(&#39;click&#39;, function () &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">	$(this).css(&#39;backgroundColor&#39;,&#39;red&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">&#125;)</span></pre></td></tr></table></figure>
-
-<h3 id="20-自动触发事件"><a href="#20-自动触发事件" class="headerlink" title="20 . 自动触发事件"></a>20 . 自动触发事件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 1. 元素.事件（）;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">$(&#39;div&#39;).click();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 2. trigger(&#39;事件&#39;)；</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">$(&#39;div&#39;).trigger(&#39;click&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 3. triggerHandler(&#39;事件&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">$(&#39;div&#39;).triggerHandler(&#39;click&#39;);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 区别 第三个不会触发元素的默认行为</span></pre></td></tr></table></figure>
-
-<h3 id="21-事件对象e"><a href="#21-事件对象e" class="headerlink" title="21. 事件对象e"></a>21. 事件对象e</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">和原生js事件对象一样</span></pre></td></tr></table></figure>
-
-<h3 id="22-jQuery-对象拷贝-extend-（浅拷贝-深拷贝）"><a href="#22-jQuery-对象拷贝-extend-（浅拷贝-深拷贝）" class="headerlink" title="22 jQuery 对象拷贝$.extend()（浅拷贝 深拷贝）"></a>22 jQuery 对象拷贝$.extend()（浅拷贝 深拷贝）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">var obj &#x3D; &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">	age: 20，</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">	mes： &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">		name: &#39;xx&#39;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">	&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">&#125;;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">var oldobj &#x3D; &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"> 	age: 19,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"> 	name: &#39;kke&#39;,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line"> 	mse: &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line"> 		age: 18</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line"> 	&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">$.extend(obj, oldobj); &#x2F;&#x2F; 把第二个对象拷贝给第一个对象 如果属性冲突覆盖</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">$(false, obj, oldobj); &#x2F;&#x2F; 浅拷贝 默认的 只是把第二个对象的地址复制给了第一个 任何一个对象改变属性两个都会改变</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">$(true, obj, oldobj); &#x2F;&#x2F; 深拷贝 把第二个对象复制一份给第一个 并且如果属性冲突 合并</span></pre></td></tr></table></figure>
-
-<h3 id="23-解决jQuery-多库共存"><a href="#23-解决jQuery-多库共存" class="headerlink" title="23 . 解决jQuery 多库共存"></a>23 . 解决jQuery 多库共存</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 1. $ 冲突 可以使用 jQuery 代替</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 2. 开发$符号权限 var shuibian &#x3D; $.noConflict(); &#x2F;&#x2F; shuibian 就可以代替 $</span></pre></td></tr></table></figure>
-
-<h3 id="24-jQuery-插件"><a href="#24-jQuery-插件" class="headerlink" title="24. jQuery 插件"></a>24. jQuery 插件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">瀑布流</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">懒加载等等</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 全屏滚动插件（fillpage.js）</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">hithub: http:&#x2F;&#x2F;github.com&#x2F;alvarotrigo&#x2F;fullPage.js</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">中文翻译网站 http:&#x2F;&#x2F;www.dowebok.com&#x2F;demo&#x2F;2014&#x2F;77&#x2F;</span></pre></td></tr></table></figure>
-
-<h3 id="25-JSON-stringify-和-JSON-parse"><a href="#25-JSON-stringify-和-JSON-parse" class="headerlink" title="25. JSON.stringify() 和 JSON.parse()"></a>25. JSON.stringify() 和 JSON.parse()</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">1. 在本地存储localStorage里面只能存储字符串格式 因此需要把对象转换为字符串 JSON.stringify(data);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">2. 获取本地数据， 需要把里面的字符串转化为对象格式JSON.parse(data);</span></pre></td></tr></table></figure>
-
-<h3 id="26-获取元素的宽高"><a href="#26-获取元素的宽高" class="headerlink" title="26.获取元素的宽高"></a>26.获取元素的宽高</h3><table>
-<thead>
-<tr>
-<th>方法</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>width()    /    height()</td>
-<td>获取元素的宽 和 高 但是 不包含  padding margin border</td>
-</tr>
-<tr>
-<td>innerWidth()  /  innerHeight()</td>
-<td>获取元素的宽 和 高 包含 padding</td>
-</tr>
-<tr>
-<td>outerWidth()  /  outerHeight()</td>
-<td>获取元素的宽 和 高 包含 padding  border</td>
-</tr>
-<tr>
-<td>outerWidth(true)  /  outerHeight(true)</td>
-<td>获取元素的宽 和 高 包含 padding  border margin</td>
-</tr>
-</tbody></table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">获取的都是数字型不带单位</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">不写参数  获取数据</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">写参数 设置数据 参数不用带单位</span></pre></td></tr></table></figure>
-
-<h3 id="27-获取元素位置"><a href="#27-获取元素位置" class="headerlink" title="27. 获取元素位置"></a>27. 获取元素位置</h3><h4 id="27-1-offset"><a href="#27-1-offset" class="headerlink" title="27.1 offset()"></a>27.1 offset()</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">offset() 获取元素相对于文档的位置 返回一个对象</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 获取距离文档上放位置</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">$(&#39;div&#39;).offset().top;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 获取距离文档左方位置</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">$(&#39;div&#39;).offset().left;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 设置位置</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">$(&#39;div&#39;).offset(&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">	top: 200,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">	left: 300</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">&#125;);</span></pre></td></tr></table></figure>
-
-<h4 id="27-2-position"><a href="#27-2-position" class="headerlink" title="27.2 position()"></a>27.2 position()</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">获取距离带有定位父级元素的位置</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">$(&#39;div&#39;).position().top;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">$(&#39;div&#39;).position().left;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 但是不能设置</span></pre></td></tr></table></figure>
-
-<h4 id="27-3-scrollTop-scrollLeft"><a href="#27-3-scrollTop-scrollLeft" class="headerlink" title="27.3 scrollTop()  scrollLeft()"></a>27.3 scrollTop()  scrollLeft()</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">scrollTop() 设置获取元素头部被卷去的部分</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">scrollLeft() 设置获取元素左部被卷去的部分</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 加参数就是设置</span></pre></td></tr></table></figure>
-
 
       
 
@@ -393,6 +207,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color3">随笔</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -443,7 +268,7 @@
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://kinghxc.top/2019/12/01/jQuery/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://kinghxc.top/2020/03/08/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E5%86%85%E6%A0%B8/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -457,18 +282,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/12/01/%E5%90%8E%E7%AB%AF/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/03/08/vue%20element-ui%E4%B9%8B%E8%A1%A8%E5%8D%95Form/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          后端
+          vue element-ui之表单Form
         
       </div>
     </a>
   
   
-    <a href="/2019/12/01/javascript%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">javascript面向对象</div>
+    <a href="/2020/03/07/vue%20Element-Ui%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">vue Element-Ui基本使用</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -495,7 +320,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-jquery的入口函数"><span class="toc-number">1.</span> <span class="toc-text">1. jquery的入口函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-DOM对象-和-jQuery对象"><span class="toc-number">2.</span> <span class="toc-text">2.DOM对象 和 jQuery对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-jQuery选择器"><span class="toc-number">3.</span> <span class="toc-text">3.jQuery选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-隐式迭代"><span class="toc-number">4.</span> <span class="toc-text">4.隐式迭代</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-jQuery-筛选选择器"><span class="toc-number">5.</span> <span class="toc-text">5.jQuery 筛选选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-jQuery筛选方法"><span class="toc-number">6.</span> <span class="toc-text">6.jQuery筛选方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-操作css方法"><span class="toc-number">7.</span> <span class="toc-text">7.操作css方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-类操作（添加-删除-切换）"><span class="toc-number">8.</span> <span class="toc-text">8.类操作（添加 删除 切换）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-显示-隐藏-切换效果"><span class="toc-number">9.</span> <span class="toc-text">9.显示 隐藏 切换效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-滑动（上滑动-下滑动-切换滑动）"><span class="toc-number">10.</span> <span class="toc-text">10.滑动（上滑动 下滑动 切换滑动）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-事件切换-hover"><span class="toc-number">11.</span> <span class="toc-text">11.事件切换 hover()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12-停止动画-stop"><span class="toc-number">12.</span> <span class="toc-text">12.停止动画 stop()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#13-淡入-淡出效果"><span class="toc-number">13.</span> <span class="toc-text">13. 淡入 淡出效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#14-自定义动画-animate"><span class="toc-number">14.</span> <span class="toc-text">14 .自定义动画 animate</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#15-获取-设置元素属性"><span class="toc-number">15.</span> <span class="toc-text">15.获取 设置元素属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#16-获取-设置元素的内容"><span class="toc-number">16.</span> <span class="toc-text">16. 获取 设置元素的内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#17-元素操作"><span class="toc-number">17.</span> <span class="toc-text">17. 元素操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#18-事件绑定"><span class="toc-number">18.</span> <span class="toc-text">18. 事件绑定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#19-解绑事件"><span class="toc-number">19.</span> <span class="toc-text">19. 解绑事件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#20-自动触发事件"><span class="toc-number">20.</span> <span class="toc-text">20 . 自动触发事件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#21-事件对象e"><span class="toc-number">21.</span> <span class="toc-text">21. 事件对象e</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#22-jQuery-对象拷贝-extend-（浅拷贝-深拷贝）"><span class="toc-number">22.</span> <span class="toc-text">22 jQuery 对象拷贝$.extend()（浅拷贝 深拷贝）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#23-解决jQuery-多库共存"><span class="toc-number">23.</span> <span class="toc-text">23 . 解决jQuery 多库共存</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#24-jQuery-插件"><span class="toc-number">24.</span> <span class="toc-text">24. jQuery 插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#25-JSON-stringify-和-JSON-parse"><span class="toc-number">25.</span> <span class="toc-text">25. JSON.stringify() 和 JSON.parse()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#26-获取元素的宽高"><span class="toc-number">26.</span> <span class="toc-text">26.获取元素的宽高</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#27-获取元素位置"><span class="toc-number">27.</span> <span class="toc-text">27. 获取元素位置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#27-1-offset"><span class="toc-number">27.1.</span> <span class="toc-text">27.1 offset()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#27-2-position"><span class="toc-number">27.2.</span> <span class="toc-text">27.2 position()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#27-3-scrollTop-scrollLeft"><span class="toc-number">27.3.</span> <span class="toc-text">27.3 scrollTop()  scrollLeft()</span></a></li></ol></li></ol>
+                    目录，不存在的…
                     </div>
                 </span>
             </div>
