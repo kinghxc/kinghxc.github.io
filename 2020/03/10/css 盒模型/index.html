@@ -6,16 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://kinghxc.top">
-  <title>vue 路由概述 | 开心的晓的博客</title>
+  <title>盒模型 | 开心的晓的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1路由是一个比较广泛和抽象的概念，路由的本质就是对应关系2在开发中，路由分为： 后端路由 前端路由  1后端路由2根据不同用户的URL请求，返回不同内容3URL请求地址与服务器资源之间的对应关系  1SPA(single page application)21. 以前的web开发 常采用后端渲染（但是存在性能问题 经常访问）32. 之后采用 Ajax前端渲染（前端渲染性能高，但是不支持浏览器的前进">
+  <meta name="description" content="1&amp;#x2F;&amp;#x2F; 传统盒模型2box-sizing: content-box;3盒子实际大小 &amp;#x3D; content + padding + border4padding border 撑大盒子5&amp;#x2F;&amp;#x2F; css3盒模型6box-sizing: border-box;7盒子实际大小 &amp;#x3D; content（包含padding border） 8padding">
+<meta name="keywords" content="css">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vue 路由概述">
-<meta property="og:url" content="http:&#x2F;&#x2F;kinghxc.top&#x2F;2020&#x2F;02&#x2F;29&#x2F;vue%20%E8%B7%AF%E7%94%B1%E6%A6%82%E8%BF%B0&#x2F;index.html">
+<meta property="og:title" content="盒模型">
+<meta property="og:url" content="http:&#x2F;&#x2F;kinghxc.top&#x2F;2020&#x2F;03&#x2F;10&#x2F;css%20%E7%9B%92%E6%A8%A1%E5%9E%8B&#x2F;index.html">
 <meta property="og:site_name" content="开心的晓的博客">
-<meta property="og:description" content="1路由是一个比较广泛和抽象的概念，路由的本质就是对应关系2在开发中，路由分为： 后端路由 前端路由  1后端路由2根据不同用户的URL请求，返回不同内容3URL请求地址与服务器资源之间的对应关系  1SPA(single page application)21. 以前的web开发 常采用后端渲染（但是存在性能问题 经常访问）32. 之后采用 Ajax前端渲染（前端渲染性能高，但是不支持浏览器的前进">
+<meta property="og:description" content="1&amp;#x2F;&amp;#x2F; 传统盒模型2box-sizing: content-box;3盒子实际大小 &amp;#x3D; content + padding + border4padding border 撑大盒子5&amp;#x2F;&amp;#x2F; css3盒模型6box-sizing: border-box;7盒子实际大小 &amp;#x3D; content（包含padding border） 8padding">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-02-29T11:19:19.208Z">
+<meta property="og:updated_time" content="2020-03-10T13:05:39.507Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="开心的晓的博客" type="application/atom+xml">
@@ -156,36 +157,27 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-vue 路由概述" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-css 盒模型" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      vue 路由概述
+      盒模型
     </h1>
   
 
         
-        <a href="/2020/02/29/vue%20%E8%B7%AF%E7%94%B1%E6%A6%82%E8%BF%B0/" class="archive-article-date">
-  	<time datetime="2020-02-29T11:15:30.703Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-29</time>
+        <a href="/2020/03/10/css%20%E7%9B%92%E6%A8%A1%E5%9E%8B/" class="archive-article-date">
+  	<time datetime="2020-03-10T13:03:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-10</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">路由是一个比较广泛和抽象的概念，路由的本质就是对应关系</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">在开发中，路由分为： 后端路由 前端路由</span></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">后端路由</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">根据不同用户的URL请求，返回不同内容</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">URL请求地址与服务器资源之间的对应关系</span></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">SPA(single page application)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">1. 以前的web开发 常采用后端渲染（但是存在性能问题 经常访问）</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">2. 之后采用 Ajax前端渲染（前端渲染性能高，但是不支持浏览器的前进后退操作）</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">3. 之后采用SPA（single page application)单页面应用程序：整个网站只有一个页面，内容的变化通过Ajax局部更新实现，同时支持浏览器的前进后退操作</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">4. SPA实现原理之一：基于URL地址的Hash(hash的变化导致浏览器记录访问历史的变化，但是hash的变化不会触发新的URL请求)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">5. 在实现SPA过程中，最核心的技术就是前端路由</span></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">前端路由</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">根据不同的用户事件，显示不同的页面内容</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">本质： 用户事件和是事件函数之间的对应关系</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">前端路由负责事件监听，触发事件后，通过事件函数渲染不同的内容</span></pre></td></tr></table></figure>
-
-<p>模拟简单的路由</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 监听 window 的 onhashchange 事件，根据获取最新的 hash（锚点） 值，切换要显示的组件名称</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">window.onhashchange &#x3D; function () &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">	&#x2F;&#x2F; 通过location.hash 获取最新的 hash 值</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 传统盒模型</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">box-sizing: content-box;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">盒子实际大小 &#x3D; content + padding + border</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">padding border 撑大盒子</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; css3盒模型</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">box-sizing: border-box;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">盒子实际大小 &#x3D; content（包含padding border） </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">padding border 不撑大盒子</span></pre></td></tr></table></figure>
 
 
       
@@ -195,6 +187,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color4">css</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -245,7 +248,7 @@
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://kinghxc.top/2020/02/29/vue%20%E8%B7%AF%E7%94%B1%E6%A6%82%E8%BF%B0/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://kinghxc.top/2020/03/10/css%20%E7%9B%92%E6%A8%A1%E5%9E%8B/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -259,18 +262,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/02/29/vue%20Router%E7%9A%84%E6%A6%82%E8%BF%B0/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          vue Router的概述
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/02/28/vue%20axios%E5%A4%84%E7%90%86%E5%BC%82%E6%AD%A5%E8%AF%B7%E6%B1%82(async-await)/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">vue axios处理异步请求(async-await)</div>
+    <a href="/2020/03/10/css%E9%80%89%E6%8B%A9%E5%99%A8%E7%9A%84%E6%9D%83%E9%87%8D/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">css选择器的权重</div>
       <i class="icon-circle-right"></i>
     </a>
   
